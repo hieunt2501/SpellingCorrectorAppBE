@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Request
 import uvicorn
 import logging
-import subprocess
+# import subprocess
 # import os
 
 # print(os.getcwd())
-subprocess.call(['sh', './download.sh'])
+# subprocess.call(['sh', './download.sh'])
 
 from autocorrection.correct import AutoCorrection
 from config.config import get_config

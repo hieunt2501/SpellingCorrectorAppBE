@@ -52,6 +52,6 @@ N_WORDS = {
 BERT_PRETRAINED = 'vinai/phobert-base'
 
 MODEL_SAVE_PATH = 'autocorrection/weights/model/'
-MODEL_CHECKPOINT = f'model{DOMAIN}.pth'
+MODEL_CHECKPOINT = f'model{DOMAIN}.pbz2'
 
 PKL_PATH = 'autocorrection/input/luanvan/'

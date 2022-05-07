@@ -1,11 +1,21 @@
 import re
 import pickle
+import bz2file as bz2
 import unicodedata
 # from underthesea import word_tokenize
 # import unidecode
 
 
 from autocorrection.constants import *
+
+def compressed_pickle(title, data):
+    with bz2.BZ2File(title + '.pbz2', 'w') as f:
+        pickle.dump(data, f)
+        
+def decompress_pickle(file):
+    data = bz2.BZ2File(file, 'rb')
+    data = pickle.load(data)
+    return data
 
 def tokenize(text):
     tokens = TOKENIZER_REGEX.split(text)

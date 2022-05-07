@@ -41,9 +41,12 @@ class AutoCorrection:
         return model
 
     def load_model(self, path):
-        model = self.select_model()
-        model_states = torch.load(path, map_location=self.device)
-        model.load_state_dict(model_states['model'])
+        model = decompress_pickle(path)
+        # model = self.select_model()
+        
+        # model_states = torch.load(path, map_location=self.device)
+        # model.load_state_dict(model_states['model'])
+        # compressed_pickle("model0", model)
         model.eval()
         return model
 

@@ -5,7 +5,7 @@ import subprocess
 # import os
 
 # print(os.getcwd())
-subprocess.call(['sh', './download.sh'])
+subprocess.call(['sh', './download.sh'], shell=True)
 
 from autocorrection.correct import AutoCorrection
 from config.config import get_config

@@ -9,7 +9,7 @@ mkdir weights
 mkdir weights/history
 mkdir weights/model
 cd weights/model
-gdown https://drive.google.com/uc?id=1PqGIjiQCp5xNINsAcBzOracLw0t6CuVA
+gdown https://drive.google.com/uc?id=1VH3C2wti6MbL7LODiABqBj5qXFEc7lQ_
 cd ../..
 
 cd tokenization_repair

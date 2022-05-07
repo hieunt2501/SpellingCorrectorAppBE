@@ -9,3 +9,4 @@ fastapi==0.75.2
 unicorn[standard]
 uvicorn==0.17.6
 gunicorn==20.1.0
+bz2file

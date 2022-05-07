@@ -2,7 +2,7 @@ cd autocorrection
 mkdir input
 mkdir input/luanvan
 cd input/luanvan
-gdown https://drive.google.com/uc?id=145geEupadzGwxZaueZE-kr4fHYmO-REC
+gdown https://drive.google.com/uc?id=1WpsWHXkjp_qwySAxpBI5oxwA3t5m4wye
 cd ../..
 
 mkdir weights

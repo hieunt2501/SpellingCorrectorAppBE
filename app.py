@@ -1,6 +1,11 @@
 from fastapi import FastAPI, Request
 import uvicorn
 import logging
+import subprocess
+# import os
+
+# print(os.getcwd())
+subprocess.call(['sh', './download.sh'])
 
 from autocorrection.correct import AutoCorrection
 from config.config import get_config
@@ -23,6 +28,10 @@ app = FastAPI(
 autocorrection = AutoCorrection()
 
 
+# def run_setup():
+    
+
+
 @app.post("/correct")
 async def correct_sentence(request: Request):
     data = await request.json()
@@ -41,7 +50,8 @@ async def correct_sentence(request: Request):
         }
     }
 
-if __name__ == "__main__":  
+if __name__ == "__main__":
+    # run_setup()
     uvicorn.run(app, host="0.0.0.0", port=8000)
 # if __name__ == "__main__":  
     # uvicorn.run(

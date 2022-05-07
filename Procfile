@@ -1,1 +1,1 @@
-web sh setup.sh && uvicorn app:app --host=0.0.0.0 --port=8000
+web: sh setup.sh && uvicorn app:app --host=0.0.0.0 --port=8000

@@ -1,8 +1,8 @@
 from typing import Dict, List, Set, Optional
 import numpy as np
 
-from autocorrection.tokenization_repair.src.estimator.unidirectional_lm_estimator import UnidirectionalLMEstimator
-from autocorrection.tokenization_repair.src.estimator.bidirectional_labeling_estimator import BidirectionalLabelingEstimator
+from autocorrection.src.estimator.unidirectional_lm_estimator import UnidirectionalLMEstimator
+from autocorrection.src.estimator.bidirectional_labeling_estimator import BidirectionalLabelingEstimator
 
 
 def space_positions_in_merged(sequence: str) -> Set[int]:

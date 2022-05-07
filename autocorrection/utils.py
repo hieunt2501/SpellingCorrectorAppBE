@@ -1,7 +1,7 @@
 import re
 import pickle
 import unicodedata
-from underthesea import word_tokenize
+# from underthesea import word_tokenize
 # import unidecode
 
 

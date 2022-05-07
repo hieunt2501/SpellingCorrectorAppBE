@@ -1,21 +1,21 @@
 from typing import Optional
 
 from autocorrection.tokenization_repair.src.helper.files import path_exists, make_directory
-from autocorrection.tokenization_repair.src.benchmark.subset import Subset
+# from autocorrection.tokenization_repair.src.benchmark.subset import Subset
 
 # BASE DIRECTORY
-DUMP_DIRS = [
-    "autocorrection/tokenization_repair/data/"
-]
-DUMP_DIR = None
-for dir in DUMP_DIRS:
-    if path_exists(dir):
-        DUMP_DIR = dir
-        print("Located data folder: %s" % DUMP_DIR)
-        break
-if DUMP_DIR is None:
-    raise Exception("Unable to locate data folder.")
-
+# DUMP_DIRS = [
+#     "autocorrection/tokenization_repair/data/"
+# ]
+# DUMP_DIR = None
+# for dir in DUMP_DIRS:
+#     if path_exists(dir):
+#         DUMP_DIR = dir
+#         print("Located data folder: %s" % DUMP_DIR)
+#         break
+# if DUMP_DIR is None:
+#     raise Exception("Unable to locate data folder.")
+DUMP_DIR = "autocorrection/tokenization_repair/data/"
 # MODEL DIRECTORY FOR SERVER
 MODEL_FOLDER = DUMP_DIR + "models_server/"
 
@@ -136,10 +136,10 @@ ARXIV_TRAINING_SEQUENCES = ARXIV_CORPUS_DIR + "training.txt"
 ARXIV_ENCODER_DICT = ARXIV_CORPUS_DIR + "encoder_dict.pkl"
 
 
-def benchmark_sub_directory(name: str,
-                            subset: Subset,
-                            subfolder: Optional[str]) -> str:
-    subdir = name + "/" + subset.folder_name() + "/"
-    if subfolder is not None:
-        subdir += subfolder + "/"
-    return subdir
+# def benchmark_sub_directory(name: str,
+#                             subset: Subset,
+#                             subfolder: Optional[str]) -> str:
+#     subdir = name + "/" + subset.folder_name() + "/"
+#     if subfolder is not None:
+#         subdir += subfolder + "/"
+#     return subdir

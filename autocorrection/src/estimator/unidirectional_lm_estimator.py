@@ -3,7 +3,7 @@ from typing import List
 import numpy as np
 import tensorflow as tf
 
-from autocorrection.tokenization_repair.src.estimator.estimator_model import EstimatorModel
+from autocorrection.src.estimator.estimator_model import EstimatorModel
 from autocorrection.tokenization_repair.src.nn.cells import multilayer_lstm_cell
 from autocorrection.tokenization_repair.src.nn.outputs import crossentropy_output
 from autocorrection.tokenization_repair.src.tensorflow.metrics import accuracy

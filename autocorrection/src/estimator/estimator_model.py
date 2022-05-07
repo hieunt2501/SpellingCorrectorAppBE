@@ -8,9 +8,9 @@ from autocorrection.tokenization_repair.src.helper.files import make_directory, 
 from autocorrection.tokenization_repair.src.tensorflow.fixed_estimator import Estimator
 from autocorrection.tokenization_repair.src.tensorflow.metrics import accuracy
 from autocorrection.tokenization_repair.src.tensorflow.functions import masked_mean
-from autocorrection.tokenization_repair.src.encoding.character_encoder import get_encoder
-from autocorrection.tokenization_repair.src.estimator.training_result_hook import TrainingResultHook
-from autocorrection.tokenization_repair.src.estimator.training_result_saver import TrainingResultSaver
+from autocorrection.src.encoding.character_encoder import get_encoder
+from autocorrection.src.estimator.training_result_hook import TrainingResultHook
+from autocorrection.src.estimator.training_result_saver import TrainingResultSaver
 
 
 def latest_saved_model_dir(path):

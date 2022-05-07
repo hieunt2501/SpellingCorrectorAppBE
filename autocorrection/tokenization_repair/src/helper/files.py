@@ -4,8 +4,8 @@ import os
 import shutil
 import random
 
-from autocorrection.tokenization_repair.src.settings.constants import FILE_ENCODING
-
+# from autocorrection.tokenization_repair.src.settings.constants import FILE_ENCODING
+FILE_ENCODING = "utf8"
 
 def path_exists(path):
     return os.path.exists(path)

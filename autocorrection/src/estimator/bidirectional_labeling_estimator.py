@@ -2,10 +2,8 @@ from typing import List
 
 import tensorflow as tf
 
-from autocorrection.tokenization_repair.src.estimator.estimator_model import EstimatorModel
+from autocorrection.src.estimator.estimator_model import EstimatorModel
 from autocorrection.tokenization_repair.src.nn.cells import multilayer_lstm_cell
-from autocorrection.tokenization_repair.src.tensorflow.metrics import accuracy
-
 
 class BidirectionalLabelingEstimatorSpecification:
     def __init__(self,
